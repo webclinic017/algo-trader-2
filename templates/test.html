@@ -1,0 +1,19 @@
+{% extends  "base.html" %}
+
+{% block content %}
+<div class="container">
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+<p id="time"></p>
+
+<button onclick="document.getElementById('time').innerHTML=Date()">The time is?</button>
+<script>
+var person = "John Doe"
+var age = 35
+document.getElementById("demo").innerHTML = "Hello " + person +" Age: "+ age;
+</script>
+
+</div>
+{% endblock content %}

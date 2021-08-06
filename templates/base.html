@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{% if title %}
+<title id="title"> {{title}} </title>
+{% else %}
+<title id="title">FloDesigns</title>
+{% endif %}
+
+<meta charset="utf-8">
+<!-- Mobile Specific Metas-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- FONT -->
+
+<!-- CSS -->
+<link rel="stylesheet" href="/static/Skeleton-2.0.4/css/normalize.css">
+<link rel="stylesheet" href="/static/Skeleton-2.0.4/css/skeleton.css">
+<!-- Favicon -->
+<link rel="icon" type="image.png" href="static/Skeleton-2.0.4/images/favicon.png">
+
+</head>
+<body>
+
+<div class="topnavbar" id="mytopnavbar">
+<div class="container">
+<img src="{{url_for('static', filename='Asset 3.jpg')}}" alt="FloDesigns3D" style="float:left;width:4%;height:5%">
+
+<!--<ul class="container">-->
+<!--<tb><a class="navlinks" href="/contact">Contact</a></td> -->
+
+
+<a href="/">Home</a>
+<a href="/resource">Resources</a>
+<a href="/about">About</a>
+<!-- <a class="button button-primary"href="/login">Login</a> -->
+<!--</ul>-->
+</div>
+
+</div>
+<div class="main">
+
+
+	{% block content %} {% endblock %}
+<div>
+
+<!-- javascript -->
+<script async src="/static/myscript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+{% extends  "base.html" %}
+
+{% block content %}
+<div class="container">
+  <div class="three columns">
+    <div class="w3-card-4">
+      <img src="{{url_for('static', filename='Asset 3.png')}}" alt="FloDesigns3D" style="width:75%;height:75%">
+    </div>
+  </div>
+  <div class="nine columns">
+    <div class="w3-card">
+      <h1>Welcome!</h1>
+      <p">
+      <img src="https://sd.keepcalms.com/i/without-engineers-science-is-just-philosophy.png" alt="Without Engineering Science is Philosophy" style="float:left;width:333px;height:333px;">
+      Hello and welcome to Florian's very first website. Make yourself at home as I will be updating the website shortly to add more fuctionality</p>
+
+      <p>Welcome to my very first website! I am a mechanical engineer who is always looking for a way to tinker.
+          I am currently employed full time as a construction design engineer, and it has been an awesome learning experience.
+          I get to design, consult, and administer at my current engineering firm.
+          It's a small to medium sized company so the coworkers feel like family.
+          However, my professional life doesn't exactly line up with my interest.
+          As such I have decided to use my spare time outside 9-5 hours to build my infrastructure here at my home office.</p>
+
+        <p>I bought a Raspberry Pi 3 B+ and decided to learn about the Linux Operating.
+            As such I am thoroughly amazed about how open source the software is on this platform.
+            Nothing is locked behind pay walls and if you are persistent enough you can set up complex configurations of software for a purpose like... such as... you guessed it, hosting a website!
+            Using a nginx, uwsgi, and flask stack and a lot of configuration I was able to set up the back end of this webserver.</p>
+
+        <p>In the future I will add instructions on my steps to configuring the server running on a Debian operating system, installed in a raspberry pi.
+              I plan to expand the functionality of this website and at the same time expand my technical skills in other areas other than my current professional career.
+              I have a long-term goal of working in the forefront of engineering. In the field of renewable energy, sustainability, energy storage and smart grids.
+              Until then I'll be working here updating the Engineering Blog.</p>
+    </div>
+  </div>
+</div>
+{% endblock content %}

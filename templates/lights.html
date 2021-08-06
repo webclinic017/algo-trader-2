@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+<form action= "/lights/all_on" method="POST">
+<input type= "submit" value= "Turn on all lights" />
+</form>
+<form action= "/lights/all_off" method="POST">
+<input type= "submit" value= "Turn off all lights" />
+</form>
+<form action="/lights/all_bri" method="POST">
+0% <input type="range"  name="brightness"  min="1" max="254"> 100%
+<input type="submit" value="Set global brightness"/>
+</form>
+</div>
+{% endblock %}
